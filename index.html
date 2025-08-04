@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/c9a7714013.js" crossorigin="anonymous"></script>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" alt="logo" class="logo">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div class="header-text">
+                <p> Frontend Web Devloper</p>
+                <h1>Hi , I'm <span>Vidhi </span><br> Malviya From Maharashtra</h1>
+            </div>
+        </div>
+    </div>
+    <!------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg" alt="img" class="img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I’m Vidhi Malviya, a second-year BCA (AI & ML) student.. with a passion for front-end web development.
+                         I love building clean, responsive user interfaces and am currently deepening my skills in Java and Data Structures & Algorithms. 
+                         I'm eager to learn, grow, and contribute to innovative tech projects.</p>
+
+                         <div class="tab-tiles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('Education')">Education</p>
+                            <p class="tab-links"onclick="opentab('Achievments')">Achievments</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Frontend Developer</span><br>Html , CSS , JavaScript, React </li>
+                                <li><span>Backend Development</span><br>Node.js , Node:express, Node:ejs , Rest APIs ,Sql</li>
+                                <li><span>Java Programming</span><br>Currently gaining hands on DSA </li>
+                            </ul>
+
+                         </div>
+                         <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>12Th Boards</span><br> CBSE Board
+                                    School of Prabhat
+                                    
+                                    Score: 90% with distinction</li>
+                                <li><span>Bachelor of Computer Applications <br>(BCA – AI Focus)
+                                    Oriental University, Indore</span><br>
+                        
+                                    CGPA: 9.1/10
+                                    Courses: Artificial Intelligence, Programming, Web Development</li>
+                                
+                            </ul>
+
+                         </div>
+                         <div class="tab-contents" id="Achievments">
+                            <ul>
+                                <li><span>Best Speaker</span><br>Was Awarded 3 times best speaker in a loop. </li>
+                                <li><span>Project Expo</span><br>Participated in Project Expo where we displayed our Framer App</li>
+                                <li><span>BootCamp</span><br>Did a certification Course on Drone technology</li>
+                            </ul>
+
+                         </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------Projects---------------->
+    <div id="Projects">
+        <div class="container">
+        <h1 class="sub_title"`> My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Quiz App</h2>
+                    <p>The Quiz App is a fully responsive, 
+                        interactive web application developed using HTML, 
+                        CSS, and JavaScript</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>E-demy Website </h2>
+                    <p>Built an interactive e-learning website using react , nodejs,mongoDB
+                         to enhance logic-building and event-handling skills.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-fork"></i>
+                    <h2>Live Chat applications</h2>
+                    <p>Developed a simple Live Chat applications using socketIO, react and nodejs technology
+</p>
+                        <a href="#">Learn More</a>
+                </div>
+                </div>
+                
+                 
+            </div>
+        </div>
+    </div>
+    <!---------ABOUT---------------->
+    <!-- Portfolio Section -->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub_title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Responsive Web Design</h3>
+                    <p>Developed fully responsive websites using HTML, CSS & JavaScript ensuring cross-device compatibility.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>E-commerce Edemy Website</h3>
+                    <p>Created a full-stack e-learning platform using React, Node.js, and MongoDB with dynamic content rendering.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Live Chat Application</h3>
+                    <p>Developed a real-time chat app with Socket.IO enabling instant messaging functionality with a sleek UI.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+
+</body>
+
+</html>
