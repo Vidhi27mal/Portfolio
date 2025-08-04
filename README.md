@@ -20,3 +20,9 @@ Well-structured HTML layout for clear content hierarchy.
 Stylish CSS designs with hover effects, smooth transitions, and elegant typography.
 
 Simple yet professional UI/UX to reflect my personality and work.
+
+#output
+<img width="1440" height="900" alt="Image" src="https://github.com/user-attachments/assets/168c8609-f0e7-42ad-ac85-65ececdffc8d" />
+<img width="1440" height="900" alt="Image" src="https://github.com/user-attachments/assets/13329062-38fa-49bf-9375-8bc932ae70d4" />
+<img width="1440" height="900" alt="Image" src="https://github.com/user-attachments/assets/dfe4e47e-7e2b-40cf-87fa-95f8ab0542ec" />
+<img width="1440" height="900" alt="Image" src="https://github.com/user-attachments/assets/4872beed-d7b8-44ed-9c96-a0afc534eb99" />
